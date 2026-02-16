@@ -1,0 +1,14 @@
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <iostream>
+
+
+using namespace std;
+
+vector<int> solution(vector<int> num_list) {
+    vector<int> answer;
+    sort(num_list.begin(), num_list.end());
+    answer.assign(num_list.begin(), num_list.begin() + 5);
+    return answer;
+}
